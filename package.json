@@ -1,0 +1,21 @@
+{
+  "name": "mycity1",
+  "version": "1.0.0",
+  "description": "first implementation of EJS template",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "EJS",
+    "template"
+  ],
+  "author": "Rick Myers",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}

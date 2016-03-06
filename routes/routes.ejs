@@ -1,0 +1,35 @@
+function homeFn(req, res){
+        res.render('home.ejs', {title: 'I love my City', headline: 'Every City has its own personality'});
+};
+
+function cityFn(req, res){
+
+        var cityname = req.params.city;
+        var titleValue;
+        var headlineValue;
+
+        if (cityname === 'newyork') {
+          titlevalue = "New York";
+          headlineValue = "The Business capital";
+        } 
+ 
+        if (cityname === 'london') { 
+          titlevalue = "London"; 
+          headlineValue = "UK capital"; 
+        } 
+ 
+        if (cityname === 'newdelhi') { 
+          titlevalue = "New Delhi"; 
+          headlineValue = "capital city of India"; 
+        } 
+ 
+        if (cityname === 'paris') { 
+          titlevalue = "Paris"; 
+          headlineValue = "fashion capital"; 
+        } 
+ 
+        res.render('city.ejs', {title: titleValue, headline: headlineValue}); 
+}; 
+
+module.exports.myHomeFn = homeFn;
+module.exports.myCityFn = cityFn;     
